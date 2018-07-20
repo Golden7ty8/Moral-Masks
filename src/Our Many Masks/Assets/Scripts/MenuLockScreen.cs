@@ -15,7 +15,7 @@ using UnityEngine.UI;
  * 
  */
 
-public class LockScreenManager : MonoBehaviour {
+public class MenuLockScreen : MonoBehaviour {
 
 	[Header("Options:")]
 	[Tooltip("Difference in time for the fade of the different arrows.")]
