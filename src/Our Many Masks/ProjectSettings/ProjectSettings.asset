@@ -671,7 +671,7 @@ PlayerSettings:
   cloudServicesEnabled:
     UNet: 1
   facebookSdkVersion: 7.9.4
-  apiCompatibilityLevel: 2
+  apiCompatibilityLevel: 3
   cloudProjectId: c8264d06-e78e-4531-8a97-591fb87245f9
   projectName: Our Many Masks
   organizationId: goldenway
