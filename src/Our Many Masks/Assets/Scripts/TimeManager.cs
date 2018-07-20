@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 /*
  * Manages the day and time.
@@ -14,8 +14,8 @@ using TMPro;
 public class TimeManager : MonoBehaviour {
 
 	[Header("References:")]
-	public TextMeshProUGUI timeText;
-	public TextMeshProUGUI dayText;
+	public Text timeText;
+	public Text dayText;
 
 	// Use this for initialization
 	void Start () {

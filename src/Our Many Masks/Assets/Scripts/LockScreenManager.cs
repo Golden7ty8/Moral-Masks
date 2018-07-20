@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 /*
  * Manages the lock screen.
@@ -37,7 +37,7 @@ public class LockScreenManager : MonoBehaviour {
 
 	void ArrowFadeManager () {
 		for (int i = 0; i < swipeArrows.Length; i++) {
-			swipeArrows [i].GetComponent<TextMeshProUGUI> ().color = new Color (255.0f, 255.0f, 255.0f, (Mathf.Cos(Time.time * fadeSpeed - fadeOutDifferenceTime * i) + 1) * .5f);
+			swipeArrows [i].GetComponent<Text> ().color = new Color (255.0f, 255.0f, 255.0f, (Mathf.Cos(Time.time * Mathf.PI * fadeSpeed - Mathf.PI * fadeOutDifferenceTime * i) + 1) * .5f);
 		}
 	}
 }
