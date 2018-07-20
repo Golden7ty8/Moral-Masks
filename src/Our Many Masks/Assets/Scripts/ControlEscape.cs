@@ -15,6 +15,9 @@ public class ControlEscape : MonoBehaviour {
 
 	public GameObject mainMenu;
 
+	//This variable prevents the code from running multiple times from holding down the button.
+	private bool escapeHeld = false;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -22,14 +25,17 @@ public class ControlEscape : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//Escape pressed?
-		if (Input.GetAxisRaw ("Cancel") == 1) {
+		//Escape pressed just now?
+		if (Input.GetAxisRaw ("Cancel") == 1 && escapeHeld == false) {
+			escapeHeld = true;
 			//Are we on the main menu or the lock screen?
 			if (QuickLinks.quickLinks.uIManager.currentMenu == mainMenu || QuickLinks.quickLinks.uIManager.currentMenu.name == "Lock Screen") {
 				Application.Quit ();
 			} else {
 				QuickLinks.quickLinks.uIManager.ActivateMenu (mainMenu);
 			}
+		} else if (Input.GetAxisRaw("Cancel") != 1) {
+			escapeHeld = false;
 		}
 	}
 }
