@@ -4,7 +4,7 @@ using UnityEngine;
 
 /*
  * Provides easy links to objects and scripts in other scripts
- * by simply type QuickLinks.quickLinks.* where * is any public
+ * by simply typeing QuickLinks.quickLinks.* where * is any public
  * non-static value listed below.
  * 
  * Created by GoldenWay on 7/20/2018
