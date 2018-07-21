@@ -16,8 +16,11 @@ public class QuickLinks : MonoBehaviour {
 
 	public static QuickLinks quickLinks;
 
-	[Header("References:")]
+	[Header("Scripts:")]
 	public UIManager uIManager;
+
+	[Header("Objects:")]
+	public GameObject mainCanvas;
 
 	void Awake () {
 		quickLinks = this;
