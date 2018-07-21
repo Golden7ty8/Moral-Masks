@@ -30,6 +30,6 @@ Scripts should contain a comment header describing what the script does and the 
  
  - If you have made changes, please don't delay in pushing them, especially if you stop making changes for any length of time. The longer you leave it, the more likely someone else will be making changes to the same files you changed, and there will be conflicts when it comes time to merge the changes onto the repository.
  
- - Please let everyone else who is contributing know when you are making chnages and if asked, let them know which files you are changing (something GitHub desktop makes really easy)
+ - Please let everyone else who is contributing know when you are making changes and if asked, let them know which files you are changing (something GitHub desktop makes really easy).
  
 Thanks!
