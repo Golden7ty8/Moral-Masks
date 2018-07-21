@@ -1,12 +1,12 @@
-# Our-Many-Masks
+## Our-Many-Masks
 PolyFolds Project
 
- - Controls (For Testers):
+# Controls (For Testers):
 
 Escape to go back to main menu, if already on main menu or lock screen, will quit game.
 
 
-Code Orginization (For Contributors):
+# Code Orginization (For Contributors):
 
  - Script Naming:
  Many scripts should try to stay in 'groups' when it comes to naming the script with a prefix, for example 'MenuLockScreen' and 'MenuMainMenu' both share the prefix 'Menu' at the beginning of the name. This will alphabetcly sort similarly functioning scripts together for increased orginization.
