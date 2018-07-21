@@ -3,7 +3,7 @@ PolyFolds Project.
 
 ## Controls (For Testers):
 
-Escape to go back to main menu, if already on main menu or lock screen, will quit game.
+Escape: Return to main menu, if already on main menu or lock screen, will quit game.
 
 
 ## Code Orginization (For Contributors):
