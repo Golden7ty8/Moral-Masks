@@ -1,5 +1,5 @@
 # Our-Many-Masks
-PolyFolds Project
+PolyFolds Project.
 
 ## Controls (For Testers):
 
