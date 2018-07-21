@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+ * Manages the calculator buttons.
+ * 
+ * Created by GoldenWay on 7/12/2018
+ * Modified by GoldenWay on 7/21/2018
+ * 
+ */
+
 public class CalcButton : MonoBehaviour {
 
 	public Text label;

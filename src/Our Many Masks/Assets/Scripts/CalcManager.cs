@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/* 
+ * The logic of the calculator.
+ * 
+ * Created by GoldeWay on 7/12/2018
+ * Modified by GoldenWay on 7/21/2018
+ * 
+ */
+
 public class CalcManager : MonoBehaviour {
 
 	public VerticalLayoutGroup buttonGroup;
