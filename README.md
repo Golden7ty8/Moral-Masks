@@ -14,12 +14,14 @@ PolyFolds Project.
  - Script Header:
 Scripts should contain a comment header describing what the script does and the date created and modified as well as who created/modified it.
 
- 
  - Variable and Method Naming:
  This is more personal preference but is best kept somewhat consistent across contributors for neatness sake so if you wish do deviate from this, please comunicate with other contributors and figure out a common ground. Variables are named without a capital for the first letter, but if it contains more then one word in it, instead of spaces, each new word is indicated with a capital letter at the start of each new word, this is something Unity reeconizes and displays in the inspector. For example naming a variable say "Wooden horse" would be 'woodenHorse' as a variable.
  Methods are capitalized the same except they also start with a capital letter.
  On top of this, variable and method names should (to the best of your ability) fasilitate comprihension of your code. If you think that a variable or method (particularly a public one) cannot be understood just by it's name, I would recommend for variables adding a tooltip by placing Tooltip[("Explanation of variable goes here.")] above the variable. For methods, you can add a triple slash ( /// ) which will add a block of commented text allowing you to put a summery of the method above the function that will be viewable whenever the method is used.
  But don't sweat it too much, I myself am not perfect, especially with that last one, so don't stress it too much while still trying to do the best you can!
+ 
+ - Code Organization with Methods:
+ If at any time you find yourself placing alot of code within a start, update or similar method, I would recommend placing such code in a new method instead and placing a call to that method in the the method the code was in previously for increased organization especially if the script in question is doing multiple different tasks, keeping them separate in other methods will help comprehension. An example of this in the project is the script 'MenuToolbar' where the Update method has a call to the UpdateDisplay method.
 
 ## Source Control (For Contributors):
 
