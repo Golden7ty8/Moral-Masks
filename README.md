@@ -22,7 +22,7 @@ Scripts should contain a comment header describing what the script does and the 
  But don't sweat it too much, I myself am not perfect, especially with that last one, so don't stress it too much while still trying to do the best you can!
  
  - Code Organization with Methods:
- If at any time you find yourself placing alot of code within a start, update or similar method, I would recommend placing such code in a new method instead and placing a call to that method in the the method the code was in previously for increased organization especially if the script in question is doing multiple different tasks, keeping them separate in other methods will help comprehension. An example of this in the project is the script 'MenuToolbar' where the Update method has a call to the UpdateDisplay method.
+ If at any time you find yourself placing a lot of code within a start, update or similar method, I would recommend placing such code in a new method instead and placing a call to that method in the the method the code was in previously for increased organization especially if the script in question is doing multiple different tasks, keeping them separate in other methods will help comprehension. An example of this in the project is the script 'MenuToolbar' where the Update method has a call to the UpdateDisplay method.
 
 ## Source Control (For Contributors):
 
