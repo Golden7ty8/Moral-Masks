@@ -4,6 +4,7 @@ PolyFolds Project.
 ## Controls (For Testers):
 
  - Escape: Return to main menu, if already on main menu or lock screen, will quit game.
+ - Shift: Toggle Debug Display.
 
 
 ## Code Orginization (For Contributors):
