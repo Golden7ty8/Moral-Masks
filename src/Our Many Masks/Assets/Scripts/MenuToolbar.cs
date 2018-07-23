@@ -12,7 +12,7 @@ using UnityEngine;
 
 public class MenuToolbar : MonoBehaviour {
 
-	[Header("Options:")] [Range(0.0f, 1.0f)] [Tooltip("How visible is the toolbar what closed? (1 being compleatly hidden and 0 being covering the whole screen).")]
+	[Header("Options:")] [Range(0.0f, 1.0f)] [Tooltip("How visible is the toolbar when closed? (1 being compleatly hidden and 0 being covering the whole screen).")]
 	public float closedPercentage;
 	public float slideSpeed;
 

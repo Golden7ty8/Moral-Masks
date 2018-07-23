@@ -21,6 +21,7 @@ public class QuickLinks : MonoBehaviour {
 
 	[Header("Objects:")]
 	public GameObject mainCanvas;
+	public MenuToolbar menuToolbar;
 
 	void Awake () {
 		quickLinks = this;
