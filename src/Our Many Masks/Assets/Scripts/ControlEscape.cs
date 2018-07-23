@@ -29,10 +29,10 @@ public class ControlEscape : MonoBehaviour {
 		if (Input.GetAxisRaw ("Cancel") == 1 && escapeHeld == false) {
 			escapeHeld = true;
 			//Are we on the main menu or the lock screen?
-			if (QuickLinks.quickLinks.uIManager.currentMenu == mainMenu || QuickLinks.quickLinks.uIManager.currentMenu.name == "Lock Screen") {
+			if (QuickLinks.quickLinks.menuUIManager.currentMenu == mainMenu || QuickLinks.quickLinks.menuUIManager.currentMenu.name == "Lock Screen") {
 				Application.Quit ();
 			} else {
-				QuickLinks.quickLinks.uIManager.ActivateMenu (mainMenu);
+				QuickLinks.quickLinks.menuUIManager.ActivateMenu (mainMenu);
 			}
 		} else if (Input.GetAxisRaw("Cancel") != 1) {
 			escapeHeld = false;

@@ -36,6 +36,7 @@ public class MenuToolbar : MonoBehaviour {
 	void UpdateDisplay () {
 		RectTransform tmp = panel.GetComponent<RectTransform> ();
 		if (open) {
+			//print ("open");
 			//If toolbar is meant to be fully open but is not yet in position, continue sliding it upward by decreasing currentPercentage.
 			if (tmp.anchoredPosition.y < 0) {
 				currentPercentage -= Time.deltaTime * slideSpeed;
@@ -44,11 +45,12 @@ public class MenuToolbar : MonoBehaviour {
 			}
 		} else {
 			//If meant to be closed but not yet in position, slide into position by increasing currentPercentage.
-			if (tmp.anchoredPosition.y > -QuickLinks.quickLinks.mainCanvas.GetComponent<RectTransform> ().rect.height * closedPercentage) {
+			if (tmp.anchoredPosition.y > -QuickLinks.quickLinks.mainCanvas.GetComponent<RectTransform> ().rect.height * closedPercentage + 0.1f) {
 				currentPercentage += Time.deltaTime * slideSpeed;
 			} else {
 				currentPercentage = closedPercentage;
 			}
+			print (tmp.anchoredPosition.y + ", " + -QuickLinks.quickLinks.mainCanvas.GetComponent<RectTransform> ().rect.height * closedPercentage);
 		}
 		//Update toolbar position using currentPercentage.
 		panel.GetComponent<RectTransform> ().anchoredPosition = new Vector2 (0.0f, -QuickLinks.quickLinks.mainCanvas.GetComponent<RectTransform> ().rect.height * currentPercentage);

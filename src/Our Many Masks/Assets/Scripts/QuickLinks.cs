@@ -17,7 +17,7 @@ public class QuickLinks : MonoBehaviour {
 	public static QuickLinks quickLinks;
 
 	[Header("Scripts:")]
-	public UIManager uIManager;
+	public MenuUIManager menuUIManager;
 
 	[Header("Objects:")]
 	public GameObject mainCanvas;

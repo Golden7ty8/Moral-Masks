@@ -19,8 +19,8 @@ public class MenuDebug : MonoBehaviour {
 	[Header("References:")]
 	public Text fPSText;
 
-	float fPSCounter = 0;
-	float TimeCounter = 0;
+	int fPSCounter = 0;
+	float timeCounter = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -39,11 +39,11 @@ public class MenuDebug : MonoBehaviour {
 	void FPSDisplay () {
 		//fPSText.text = ((int)(1.0f / Time.deltaTime)).ToString ();
 		fPSCounter++;
-		TimeCounter += Time.deltaTime;
-		if (TimeCounter >= fPSRefeshRate) {
-			fPSText.text = "FPS: " + (fPSCounter / fPSRefeshRate).ToString ();
+		timeCounter += Time.deltaTime;
+		if (timeCounter >= fPSRefeshRate) {
+			fPSText.text = "FPS: " + ((float)fPSCounter / fPSRefeshRate);
 			fPSCounter = 0;
-			TimeCounter -= fPSRefeshRate;
+			timeCounter -= fPSRefeshRate;
 		}
 	}
 }
