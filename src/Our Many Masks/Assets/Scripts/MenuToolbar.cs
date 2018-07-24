@@ -6,7 +6,7 @@ using UnityEngine;
  * Manages the toolbar functionality.
  * 
  * Created by GoldenWay on 7/21/2018
- * Modified by GoldenWay on 7/21/2018
+ * Modified by GoldenWay on 7/24/2018
  * 
  */
 
@@ -34,7 +34,7 @@ public class MenuToolbar : MonoBehaviour {
 	}
 
 	void UpdateDisplay () {
-		RectTransform tmp = panel.GetComponent<RectTransform> ();
+		//RectTransform tmp = panel.GetComponent<RectTransform> ();
 		if (open) {
 			//print ("open");
 			//If toolbar is meant to be fully open but is not yet in position, continue sliding it upward by decreasing currentPercentage.
