@@ -10,11 +10,14 @@ using UnityEngine;
  * 
  */
 
-public class MenuToolbar : MonoBehaviour {
+public class GeneralSliderWindow : MonoBehaviour {
 
 	[Header("Options:")] [Range(0.0f, 1.0f)] [Tooltip("How visible is the toolbar when closed? (1 being compleatly hidden and 0 being covering the whole screen).")]
 	public float closedPercentage;
+	public float openPercentage;
 	public float slideSpeed;
+	[Tooltip("False for vertical sliding, true for horizontal sliding.")]
+	public bool horizontal;
 
 	[Header("References:")]
 	public GameObject panel;
@@ -25,7 +28,7 @@ public class MenuToolbar : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		currentPercentage = closedPercentage;
-		CloseToolbar ();
+		CloseWindow ();
 	}
 	
 	// Update is called once per frame
@@ -56,19 +59,19 @@ public class MenuToolbar : MonoBehaviour {
 		panel.GetComponent<RectTransform> ().anchoredPosition = new Vector2 (0.0f, -QuickLinks.quickLinks.mainCanvas.GetComponent<RectTransform> ().rect.height * currentPercentage);
 	}
 
-	public void CloseToolbar () {
+	public void CloseWindow () {
 		open = false;
 	}
 
-	public void OpenToolbar () {
+	public void OpenWindow () {
 		open = true;
 	}
 
-	public void ToggleOpenToolbar () {
+	public void ToggleOpenWindow () {
 		open = !open;
 	}
 
-	public void ToolbarSetActive (bool active) {
+	public void WindowSetActive (bool active) {
 		panel.SetActive (active);
 	}
 }

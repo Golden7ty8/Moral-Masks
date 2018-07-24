@@ -21,7 +21,7 @@ public class QuickLinks : MonoBehaviour {
 
 	[Header("Objects:")]
 	public GameObject mainCanvas;
-	public MenuToolbar menuToolbar;
+	//public GeneralSliderWindow subMenuToolbar;
 
 	void Awake () {
 		quickLinks = this;
