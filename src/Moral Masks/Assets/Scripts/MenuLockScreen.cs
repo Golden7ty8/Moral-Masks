@@ -23,7 +23,7 @@ public class MenuLockScreen : MonoBehaviour {
 	public float fadeSpeed;
 
 	[Header("References:")]
-	public GameObject[] swipeArrows;
+	public Text[] swipeArrows;
 
 	// Use this for initialization
 	void Start () {
@@ -37,8 +37,7 @@ public class MenuLockScreen : MonoBehaviour {
 
 	void ArrowFadeManager () {
 		for (int i = 0; i < swipeArrows.Length; i++) {
-			//GameObject tmp = swipeArrows [i];
-			swipeArrows [i].GetComponent<Text> ().color = new Color (255.0f, 255.0f, 255.0f, (Mathf.Cos(Time.time * Mathf.PI * fadeSpeed - Mathf.PI * fadeOutDifferenceTime * i) + 1) * .5f);
+			swipeArrows [i].color = new Color (255.0f, 255.0f, 255.0f, (Mathf.Cos (Time.time * Mathf.PI * fadeSpeed - Mathf.PI * fadeOutDifferenceTime * i) + 1) * .5f);
 		}
 	}
 }
