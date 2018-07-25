@@ -28,6 +28,8 @@ public class TimeManager : MonoBehaviour {
 	}
 
 	void BigTimerManager () {
+		if (timeText == null)
+			print ("null");
 		if ((int)Time.time % 2 == 0) {
 			timeText.text = "12:00 am";
 		} else {
