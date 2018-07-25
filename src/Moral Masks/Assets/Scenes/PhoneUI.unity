@@ -1810,7 +1810,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 824158214}
-        m_MethodName: ToggleOpenToolbar
+        m_MethodName: ToggleOpenWindow
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2616,10 +2616,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   closedPercentage: 0.95
+  openPercentage: 0
   slideSpeed: 1.5
+  horizontal: 0
   panel: {fileID: 691837912}
-  open: 0
-  currentPercentage: 0
 --- !u!1 &838362132
 GameObject:
   m_ObjectHideFlags: 0
