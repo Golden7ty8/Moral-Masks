@@ -48,7 +48,7 @@ public class CalcButton : MonoBehaviour {
 	}
 
 	public void OnTapped() {
-		Debug.Log ("Tapped: " + label.text);
+		//Debug.Log ("Tapped: " + label.text);
 		calcManager.ButtonTapped (label.text [0]);
 	}
 }
