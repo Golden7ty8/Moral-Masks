@@ -24,7 +24,7 @@ public class GeneralSliderWindow : MonoBehaviour {
 	public ScreenEdge edge;
 
 	[Header("References:")]
-	public GameObject panel;
+	public GameObject window;
 
 	bool open = false;
 	float currentPercentage;
@@ -80,17 +80,17 @@ public class GeneralSliderWindow : MonoBehaviour {
 			//print (tmp.anchoredPosition.y + ", " + -QuickLinks.quickLinks.mainCanvas.GetComponent<RectTransform> ().rect.height * closedPercentage);
 		}
 		//Update toolbar position using currentPercentage.
-		//Vector2 tmp = panel.GetComponent<RectTransform>().anchoredPosition;
+		//Vector2 tmp = window.GetComponent<RectTransform>().anchoredPosition;
 		if (edge == ScreenEdge.Up || edge == ScreenEdge.Down) {
 			int dir = 1;
 			if (edge == ScreenEdge.Down)
 				dir = -1;
-			panel.GetComponent<RectTransform> ().anchoredPosition = new Vector2 (0.0f, canvasHeight * dir * currentPercentage);
+			window.GetComponent<RectTransform> ().anchoredPosition = new Vector2 (0.0f, canvasHeight * dir * currentPercentage);
 		} else if (edge == ScreenEdge.Left || edge == ScreenEdge.Right) {
 			int dir = 1;
 			if (edge == ScreenEdge.Right)
 				dir = -1;
-			panel.GetComponent<RectTransform> ().anchoredPosition = new Vector2 (canvasWidth * dir * currentPercentage, 0.0f);
+			window.GetComponent<RectTransform> ().anchoredPosition = new Vector2 (canvasWidth * dir * currentPercentage, 0.0f);
 		}
 	}
 
@@ -107,6 +107,6 @@ public class GeneralSliderWindow : MonoBehaviour {
 	}
 
 	public void WindowSetActive (bool active) {
-		panel.SetActive (active);
+		window.SetActive (active);
 	}
 }
