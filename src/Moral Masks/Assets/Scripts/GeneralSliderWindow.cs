@@ -88,7 +88,7 @@ public class GeneralSliderWindow : MonoBehaviour {
 			window.GetComponent<RectTransform> ().anchoredPosition = new Vector2 (0.0f, canvasHeight * dir * currentPercentage);
 		} else if (edge == ScreenEdge.Left || edge == ScreenEdge.Right) {
 			int dir = 1;
-			if (edge == ScreenEdge.Right)
+			if (edge == ScreenEdge.Left)
 				dir = -1;
 			window.GetComponent<RectTransform> ().anchoredPosition = new Vector2 (canvasWidth * dir * currentPercentage, 0.0f);
 		}
